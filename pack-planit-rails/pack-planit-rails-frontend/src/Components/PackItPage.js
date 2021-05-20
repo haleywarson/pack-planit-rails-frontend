@@ -37,16 +37,17 @@ export default function PackItPage() {
     };
 
     const addList = () => {
+        console.log("adding list...")
         setLists(items);
         fetch(listsUrl, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            name: listName,
-            list: items,
-        }),
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name: listName,
+                list: items
+            })
         });
         setItems([]);
         setListName([]);
