@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import PackItForm from "./PackItForm"
 import PackItListContainer from "./PackItListContainer"
 
-const listsUrl = "http://localhost:3000/packing_lists/";
+const listsUrl = "http://localhost:3000/lists/";
 
 export default function PackItPage() {
     const [lists, setLists] = useState([]);
@@ -46,7 +46,7 @@ export default function PackItPage() {
             },
             body: JSON.stringify({
                 name: listName,
-                list: items
+                items: items
             })
         });
         setItems([]);

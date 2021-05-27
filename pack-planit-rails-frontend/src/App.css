@@ -1,21 +1,21 @@
 /* || Login */
 .login {
   font-size: 1.3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 3em;
-  color: #5A58A6;
+  color: #5a58a6;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .login input {
-  margin: .3em;
+  margin: 0.3em;
 }
 
 /* || Header & Nav */
 header {
-  background-color: #B4C8D9;
+  background-color: #b4c8d9;
   height: 10vh;
   width: 100%;
   display: flex;
@@ -26,9 +26,9 @@ header {
 #logo {
   color: white;
   font-size: 2.1rem;
-  padding-left: .5em;
-  padding-right: .5em;
-  font-family: 'Unica One', cursive;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-family: "Unica One", cursive;
 }
 
 header a {
@@ -36,13 +36,13 @@ header a {
 }
 
 #logo:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .nav-item {
   list-style: none;
   display: inline-block;
-  padding: .5em;
+  padding: 0.5em;
   font-size: 1.5rem;
 }
 
@@ -50,59 +50,59 @@ header a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   display: flex;
 }
 
 .nav-link:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* || Main Section */
 .main-container {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background-image: url("https://images.unsplash.com/photo-1584974292709-5c2f0619971b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-image: url("https://images.unsplash.com/photo-1584974292709-5c2f0619971b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 85vh;
 }
 
 .main-content {
-    display: flex-start;
-    flex-direction: column;
-    padding: 1.5em;
-    max-height: 50%;
-    max-width: 45%;
-    background: #9FBFAA;
-    opacity: .8;
-    margin-left: 1em;
-    border-radius: 40px;
+  display: flex-start;
+  flex-direction: column;
+  padding: 1.5em;
+  max-height: 50%;
+  max-width: 45%;
+  background: #9fbfaa;
+  opacity: 0.8;
+  margin-left: 1em;
+  border-radius: 40px;
 }
 
 .main-content h2 {
   font-size: 2.7rem;
-  font-family: 'Unica One', cursive;
-  padding-bottom: .2em;
+  font-family: "Unica One", cursive;
+  padding-bottom: 0.2em;
   color: white;
 }
 
 .main-content h3 {
   font-size: 1.7rem;
-  font-family: 'Open Sans', sans-serif;
-  padding-bottom: .5em;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 0.5em;
   color: white;
 }
 
 .main-content button {
   font-size: 1.3rem;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   border-top: 1px solid #96d1f8;
-  background: #656FA6;
+  background: #656fa6;
   padding: 10px 12px;
   border-radius: 13px;
   text-decoration: none;
@@ -115,7 +115,7 @@ header a {
 }
 
 .main-content button:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* || Trips Section */
@@ -128,9 +128,9 @@ header a {
 
 .trips-title {
   font-size: 3rem;
-  font-family: 'Unica One', cursive;
-  padding: .5em;
-  color: #9FBFAA;
+  font-family: "Unica One", cursive;
+  padding: 0.5em;
+  color: #9fbfaa;
 }
 
 .trips-list {
@@ -151,13 +151,13 @@ header a {
   max-width: 9em;
   flex-grow: 1;
   flex-basis: 9em;
-  padding: .9em;
-  margin: .1em;
+  padding: 0.9em;
+  margin: 0.1em;
   border-radius: 7%;
   box-shadow: 2px 2px 3px rgba(206, 205, 205, 0.582);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 2em;
-  color: #5A58A6;
+  color: #5a58a6;
 }
 
 .trip-card img {
@@ -167,13 +167,13 @@ header a {
 
 /* || LogIt Page */
 .log-it-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: white;
-    width: 100%;
-    height: 85vh;
-    overflow: scroll;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 85vh;
+  overflow: scroll;
 }
 
 .log-it-form {
@@ -183,10 +183,10 @@ header a {
   align-items: center;
   background-color: white;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   padding: 1em;
-  color: #5A58A6;
+  color: #5a58a6;
 }
 
 .form-field {
@@ -197,11 +197,11 @@ header a {
   padding: 2em;
 }
 
-.log-it-container input[type=submit] {
+.log-it-container input[type="submit"] {
   font-size: 1.3rem;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   border-top: 1px solid #96d1f8;
-  background: #656FA6;
+  background: #656fa6;
   padding: 10px 12px;
   border-radius: 13px;
   text-decoration: none;
@@ -210,10 +210,12 @@ header a {
   color: white;
 }
 
-.log-it-container input[type=date], input[type=text], input[type=number] {
+.log-it-container input[type="date"],
+input[type="text"],
+input[type="number"] {
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
-  background: #B4C8D9;
+  font-family: "Open Sans", sans-serif;
+  background: #b4c8d9;
   padding: 10px 12px;
   border-radius: 13px;
   text-decoration: none;
@@ -221,47 +223,47 @@ header a {
   text-decoration: none;
   color: white;
   border: none;
-  width: 75%
+  width: 75%;
 }
 
-.log-it-container input[type=range] {
+.log-it-container input[type="range"] {
   width: 60%;
-  background-color: #B4C8D9;
+  background-color: #b4c8d9;
 }
 
-.log-it-container input[type=range]{
-    -webkit-appearance: none;
+.log-it-container input[type="range"] {
+  -webkit-appearance: none;
 }
 
-.log-it-container input[type=range]::-webkit-slider-runnable-track {
-    height: .5em;
-    background: #B4C8D9;
-    border: none;
+.log-it-container input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.5em;
+  background: #b4c8d9;
+  border: none;
 }
 
-.log-it-container input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: #5A58A6;
-    margin-top: -4px;
+.log-it-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #5a58a6;
+  margin-top: -4px;
 }
 
-.log-it-container input[type=submit]:hover {
-  opacity: .7;
+.log-it-container input[type="submit"]:hover {
+  opacity: 0.7;
 }
 
 /* || PackIt Page */
 
 .pack-it-page {
-    justify-content: center;
-    background-color: white;
-    width: 100%;
-    height: 85vh;
-    overflow: scroll;
-    align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 85vh;
+  overflow: scroll;
+  align-items: center;
 }
 
 .pack-it-form {
@@ -271,10 +273,10 @@ header a {
   align-items: center;
   background-color: white;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   min-height: 20vh;
-  color: #5A58A6;
+  color: #5a58a6;
   padding-top: 1em;
   margin-bottom: 1rem;
 }
@@ -287,32 +289,32 @@ header a {
   background-color: white;
   width: 100%;
   min-height: 45vh;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  color: #5A58A6;
+  color: #5a58a6;
 }
 
 .pack-it-list {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #B4C8D9;
+  background-color: #b4c8d9;
   padding: 1em;
   width: 75%;
   min-height: 30vh;
   border-radius: 13px;
 }
 
-.pack-it-list input[type=text] {
-  font-family: 'Open Sans', sans-serif ;
+.pack-it-list input[type="text"] {
+  font-family: "Open Sans", sans-serif;
 }
 
 .pack-it-list button {
   font-size: 1.3rem;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   border-top: 1px solid #96d1f8;
-  background: #656FA6;
+  background: #656fa6;
   padding: 10px 12px;
   border-radius: 13px;
   text-decoration: none;
@@ -322,48 +324,50 @@ header a {
 }
 
 .pack-it-list button:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
-.pack-it-container button, input[type=submit] {
+.pack-it-container button,
+input[type="submit"] {
   font-size: 1.3rem;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   border-top: 1px solid #96d1f8;
-  background: #656FA6;
+  background: #656fa6;
   padding: 10px 12px;
   border-radius: 13px;
   text-decoration: none;
   vertical-align: middle;
   text-decoration: none;
   color: white;
-} 
+}
 
-.pack-it-container button, input[type=submit]:hover {
-  opacity: .7;
+.pack-it-container button,
+input[type="submit"]:hover {
+  opacity: 0.7;
 }
 
 .pack-it-item {
-  padding: .3em;
+  padding: 0.3em;
 }
 
 #check-button {
-  font-size: .8rem;
+  font-size: 0.8rem;
   display: inline-block;
-  font-family: 'Unica One', cursive;
-  background: #9FBFAA;
+  font-family: "Unica One", cursive;
+  background: #9fbfaa;
   border: none;
   padding: 3px 7px;
   border-radius: 7px;
   text-decoration: none;
   vertical-align: middle;
   color: white;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 #delete-button {
-  font-size: .8rem;
+  font-size: 0.8rem;
   display: inline-block;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   background: rgba(247, 120, 120, 0.481);
   border: none;
   padding: 3px 9px;
@@ -377,7 +381,7 @@ header a {
 #list-delete-button {
   font-size: 1.3rem;
   display: inline-block;
-  font-family: 'Unica One', cursive;
+  font-family: "Unica One", cursive;
   border-top: 1px solid #96d1f8;
   background: rgba(247, 120, 120, 0.481);
   padding: 10px 12px;
@@ -386,27 +390,27 @@ header a {
   vertical-align: middle;
   text-decoration: none;
   color: white;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 /* || Footer */
 footer {
-    position: fixed;
-    bottom: 0;
-    box-shadow: 2px -1px 3px rgba(206, 205, 205, 0.582);
-    background-color: #B4C8D9;
-    height: 5vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 2px -1px 3px rgba(206, 205, 205, 0.582);
+  background-color: #b4c8d9;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 footer p {
   color: white;
-  font-size: .9rem;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* || Colors */
