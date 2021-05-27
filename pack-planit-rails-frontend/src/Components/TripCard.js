@@ -1,11 +1,12 @@
 import React from "react";
 
 import "../App.css";
+import SimpleModal from "./SimpleModal";
 
 export default function TripCard(props) {
-  const displayList = () => {
-    props.lists.map((list) => list.items);
-  };
+  //   const displayList = () => {
+  //     props.lists.map((list) => list.items);
+  //   };
 
   return (
     <div className="trip-card">
@@ -24,7 +25,8 @@ export default function TripCard(props) {
       <p>
         <span>Notes:</span> {props.notes}
       </p>
-      <button onClick={displayList()}>View packing list</button>
+      <SimpleModal />
+      {/* <button onClick={displayList()}>View packing list</button> */}
     </div>
   );
 }

@@ -165,6 +165,20 @@ header a {
   border-radius: 7%;
 }
 
+.trip-card button {
+  font-size: 1rem;
+  font-family: "Unica One", cursive;
+  border-top: 1px solid #96d1f8;
+  background: #656fa6;
+  padding: 10px 12px;
+  border-radius: 13px;
+  text-decoration: none;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+  margin-top: 1em;
+}
+
 /* || LogIt Page */
 .log-it-container {
   display: flex;
