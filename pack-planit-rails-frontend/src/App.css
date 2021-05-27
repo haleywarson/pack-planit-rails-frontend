@@ -180,6 +180,19 @@ header a {
   margin-top: 1em;
 }
 
+#modal {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: #5a58a6;
+  padding: 1em;
+}
+
+#modal button {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: #5a58a6;
+}
+
 /* || LogIt Page */
 .log-it-container {
   display: flex;

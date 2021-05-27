@@ -44,25 +44,6 @@ export default function SimpleModal(props) {
 
   const displayPackingList = props.lists.map((element) => element.items);
 
-  // const body = (
-  //   <div style={modalStyle} className={classes.paper}>
-  //     <h2 id="simple-modal-title">{props.name} Trip Details</h2>
-  //     {/* <p id="simple-modal-description">
-  //       Details from your trip to the {props.name}
-  //     </p> */}
-  //     <br />
-  //     <p>Category: {props.category}</p>
-  //     <p>Miles: {props.miles} </p>
-  //     <p>Difficulty: {props.difficulty}</p>
-  //     <p>Rating: {props.rating}</p>
-  //     <p>
-  //       <span>Notes:</span> {props.notes}
-  //     </p>
-  //     <p>Packing list:{displayPackingList}</p>
-  //     <button onClick={() => handleClose()}>Close</button>
-  //   </div>
-  // );
-
   return (
     <div>
       <button type="button" onClick={handleOpen}>
@@ -74,20 +55,26 @@ export default function SimpleModal(props) {
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
-        <div style={modalStyle} className={classes.paper}>
+        <div style={modalStyle} className={classes.paper} id="modal">
           <h2 id="simple-modal-title">{props.name} Trip Details</h2>
           {/* <p id="simple-modal-description">
-              Details from your trip to the {props.name}
+              Descr
             </p> */}
           <br />
           <p>Category: {props.category}</p>
+          <br />
           <p>Miles: {props.miles} </p>
+          <br />
           <p>Difficulty: {props.difficulty}</p>
+          <br />
           <p>Rating: {props.rating}</p>
+          <br />
           <p>
             <span>Notes:</span> {props.notes}
           </p>
-          <p>Packing list:{displayPackingList.join(", ")}</p>
+          <br />
+          <p>Packing list:{displayPackingList.join(" ")}</p>
+          <br />
           <button onClick={() => handleClose()}>Close</button>
         </div>
       </Modal>
