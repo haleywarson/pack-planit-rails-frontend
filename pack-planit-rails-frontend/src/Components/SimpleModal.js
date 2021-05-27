@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleModal() {
+export default function SimpleModal(props) {
   const classes = useStyles();
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
@@ -42,18 +42,31 @@ export default function SimpleModal() {
     setOpen(false);
   };
 
-  const body = (
-    <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">Packing list</h2>
-      <p id="simple-modal-description">List items: here</p>
-      <button onClick={() => handleClose()}>Close</button>
-    </div>
-  );
+  const displayPackingList = props.lists.map((element) => element.items);
+
+  // const body = (
+  //   <div style={modalStyle} className={classes.paper}>
+  //     <h2 id="simple-modal-title">{props.name} Trip Details</h2>
+  //     {/* <p id="simple-modal-description">
+  //       Details from your trip to the {props.name}
+  //     </p> */}
+  //     <br />
+  //     <p>Category: {props.category}</p>
+  //     <p>Miles: {props.miles} </p>
+  //     <p>Difficulty: {props.difficulty}</p>
+  //     <p>Rating: {props.rating}</p>
+  //     <p>
+  //       <span>Notes:</span> {props.notes}
+  //     </p>
+  //     <p>Packing list:{displayPackingList}</p>
+  //     <button onClick={() => handleClose()}>Close</button>
+  //   </div>
+  // );
 
   return (
     <div>
       <button type="button" onClick={handleOpen}>
-        Open Modal
+        Details
       </button>
       <Modal
         open={open}
@@ -61,7 +74,22 @@ export default function SimpleModal() {
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
-        {body}
+        <div style={modalStyle} className={classes.paper}>
+          <h2 id="simple-modal-title">{props.name} Trip Details</h2>
+          {/* <p id="simple-modal-description">
+              Details from your trip to the {props.name}
+            </p> */}
+          <br />
+          <p>Category: {props.category}</p>
+          <p>Miles: {props.miles} </p>
+          <p>Difficulty: {props.difficulty}</p>
+          <p>Rating: {props.rating}</p>
+          <p>
+            <span>Notes:</span> {props.notes}
+          </p>
+          <p>Packing list:{displayPackingList.join(", ")}</p>
+          <button onClick={() => handleClose()}>Close</button>
+        </div>
       </Modal>
     </div>
   );

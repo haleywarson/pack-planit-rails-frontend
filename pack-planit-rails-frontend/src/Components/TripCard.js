@@ -4,10 +4,6 @@ import "../App.css";
 import SimpleModal from "./SimpleModal";
 
 export default function TripCard(props) {
-  //   const displayList = () => {
-  //     props.lists.map((list) => list.items);
-  //   };
-
   return (
     <div className="trip-card">
       <img alt="Trip" src={props.image}></img>
@@ -17,16 +13,15 @@ export default function TripCard(props) {
       <p>
         {props.start_date} to {props.end_date}
       </p>
-      <br />
-      <p>Category: {props.category}</p>
-      <p>Miles: {props.miles} </p>
-      <p>Difficulty: {props.difficulty}</p>
-      <p>Rating: {props.rating}</p>
-      <p>
-        <span>Notes:</span> {props.notes}
-      </p>
-      <SimpleModal />
-      {/* <button onClick={displayList()}>View packing list</button> */}
+      <SimpleModal
+        category={props.category}
+        miles={props.miles}
+        difficulty={props.difficulty}
+        rating={props.rating}
+        notes={props.notes}
+        lists={props.lists}
+        name={props.name}
+      />
     </div>
   );
 }
