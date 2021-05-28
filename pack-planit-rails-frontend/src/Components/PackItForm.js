@@ -15,6 +15,7 @@ export default function PackItForm(props) {
       <select
         name="trip_id"
         id="trip-select"
+        className="form-field"
         value={props.trips.trip_id}
         onChange={props.handleTripsChange}
       >
