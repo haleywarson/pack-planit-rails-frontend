@@ -9,10 +9,12 @@ const tripListsUrl = "http://localhost:3000/trip_lists";
 
 export default function PackItPage() {
   const [lists, setLists] = useState([]);
+  const [listId, setListId] = useState(0);
   const [listName, setListName] = useState([]);
   const [items, setItems] = useState([]);
   const [trips, setTrips] = useState([]);
-  const [tripLists, setTripLists] = useState([]);
+  const [tripId, setTripId] = useState(0);
+  //   const [tripLists, setTripLists] = useState([]);
 
   // Data fetch
   const fetchTrips = () => {
@@ -21,11 +23,11 @@ export default function PackItPage() {
       .then(setTrips);
   };
 
-  const fetchTripLists = () => {
-    fetch(tripListsUrl)
-      .then((res) => res.json())
-      .then(setTripLists);
-  };
+  //   const fetchTripLists = () => {
+  //     fetch(tripListsUrl)
+  //       .then((res) => res.json())
+  //       .then(setTripLists);
+  //   };
 
   useEffect(() => {
     fetchTrips();
@@ -41,10 +43,7 @@ export default function PackItPage() {
   const handleTripsChange = (event) => {
     event.persist();
     const tripId = event.target.value;
-    console.log(tripId);
-    // setTripLists(
-    //     ...tripLists,
-    //     trip_id: tripId,
+    setTripId(tripId);
   };
 
   const handleSubmit = (event) => {
@@ -78,18 +77,25 @@ export default function PackItPage() {
         name: listName,
         items: items,
       }),
-    });
+    })
+      .then((res) => res.json())
+      .then(
+        (data) => setListId(data.id),
+        console.log("setting list id"),
+        setItems([]),
+        setListName([])
+      );
+
     fetch(tripListsUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        tripLists,
+        trip_id: tripId,
+        list_id: listId,
       }),
     });
-    setItems([]);
-    setListName([]);
   };
 
   const removeList = () => {

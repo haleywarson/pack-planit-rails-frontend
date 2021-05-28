@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function PackItForm(props) {
-  console.log(props.trips);
   return (
     <form className="pack-it-form" onSubmit={props.handleSubmit}>
       <label htmlFor="listName">Packing list name</label>
