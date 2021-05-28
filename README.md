@@ -12,7 +12,7 @@
 
 [Features](#features)
 
-[Code Example](#code-examples)
+[Code Examples](#code-examples)
 
 [Inspiration](#inspiration)
 
@@ -48,7 +48,7 @@ Then fork and clone this repo, open the code, run "npm install" and "npm start."
 - Save your packing list to an existing trip.
 - Review the packing lists from past trips in your trip log.
 
-## Code Example
+## Code Examples
 
 ```js
   const addList = () => {
