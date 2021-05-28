@@ -42,7 +42,7 @@ export default function SimpleModal(props) {
     setOpen(false);
   };
 
-  const displayPackingList = props.lists.map((element) => element.items);
+  const displayPackingList = () => props.lists.map((element) => element.items);
 
   return (
     <div>
@@ -73,7 +73,7 @@ export default function SimpleModal(props) {
             <span>Notes:</span> {props.notes}
           </p>
           <br />
-          <p>Packing list:{displayPackingList.join(" ")}</p>
+          <p>Packing list: {displayPackingList().toString()}</p>
           <br />
           <button onClick={() => handleClose()}>Close</button>
         </div>
