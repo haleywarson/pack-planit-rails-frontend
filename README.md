@@ -4,8 +4,6 @@
 
 [General Info](#general-info)
 
-[Demo](#demo)
-
 [Technologies](#technologies)
 
 [Setup](#setup)
@@ -21,10 +19,7 @@
 ## General Info
 
 Pack Planit helps you plan for and pack for your next camping or backpacking trip!
-
-## Demo
-
-![Demo]()
+The backend repo for this project can be found [here](https://github.com/haleywarson/pack-planit-rails-backend).
 
 ## Technologies
 
