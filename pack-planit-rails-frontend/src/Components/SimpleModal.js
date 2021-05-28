@@ -73,7 +73,7 @@ export default function SimpleModal(props) {
             <span>Notes:</span> {props.notes}
           </p>
           <br />
-          <p>Packing list: {displayPackingList().toString()}</p>
+          <p>Packing list: {displayPackingList()}</p>
           <br />
           <button onClick={() => handleClose()}>Close</button>
         </div>
