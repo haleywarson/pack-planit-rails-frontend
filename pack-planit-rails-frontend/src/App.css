@@ -354,9 +354,17 @@ input[type="number"] {
   font-family: "Open Sans", sans-serif;
 }
 
-.trip-select {
+#trip-select {
   font-family: "Open Sans", sans-serif;
   color: #656fa6;
+  margin: 1em;
+  font-size: 1rem;
+  background: #b4c8d9;
+  padding: 10px 12px;
+  border-radius: 13px;
+  vertical-align: middle;
+  border: none;
+  width: 50%;
 }
 
 .pack-it-list button {

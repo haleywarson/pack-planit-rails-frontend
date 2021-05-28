@@ -14,10 +14,11 @@ export default function PackItForm(props) {
       <h2>Which trip is this for?</h2>
       <select
         name="trip_id"
+        id="trip-select"
         value={props.trips.trip_id}
         onChange={props.handleTripsChange}
       >
-        <option className="trip-select" value="" selected disabled>
+        <option value="" selected disabled>
           Select trip
         </option>
         {props.trips.map((t) => (
