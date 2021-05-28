@@ -42,8 +42,8 @@ function App() {
           <nav className="nav-menu-active">
             <ul className="nav-list">
               <li className="nav-item">
-                <Link to="/logit" className="nav-link">
-                  Log Trip
+                <Link to="/planit" className="nav-link">
+                  Plan Trip
                 </Link>
               </li>
               <li className="nav-item">
@@ -57,7 +57,7 @@ function App() {
 
         <main>
           <Switch>
-            <Route path="/logit">
+            <Route path="/planit">
               <LogIt />
             </Route>
             <Route path="/packit">

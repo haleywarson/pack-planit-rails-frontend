@@ -12,7 +12,7 @@ export default function Main() {
           <h2>YOUR NEXT TRIP AWAITS</h2>
           <h3>Let's help you plan it.</h3>
           <button>
-            <a href="http://localhost:3001/packit">plan your Trip</a>
+            <a href="http://localhost:3001/planit">plan your Trip</a>
           </button>
         </div>
       </div>

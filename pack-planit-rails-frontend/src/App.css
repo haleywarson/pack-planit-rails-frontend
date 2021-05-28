@@ -217,6 +217,22 @@ header a {
   color: #5a58a6;
 }
 
+.log-it-form button {
+  border-top: 1px solid #96d1f8;
+  background: #656fa6;
+  padding: 10px 12px;
+  border-radius: 13px;
+  vertical-align: middle;
+  margin-top: 0.7em;
+}
+
+.log-it-form a {
+  font-size: 1.3rem;
+  font-family: "Unica One", cursive;
+  text-decoration: none;
+  color: white;
+}
+
 .form-field {
   margin: 1em;
 }

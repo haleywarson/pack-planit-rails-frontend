@@ -11,7 +11,7 @@ export default function PackItForm(props) {
         value={props.listName}
         onChange={props.handleListNameChange}
       />
-      <h2>Assign trip to your list</h2>
+      <h2>Which trip is this for?</h2>
       <select
         name="trip_id"
         value={props.trips.trip_id}
