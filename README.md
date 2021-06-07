@@ -3,17 +3,12 @@
 ## Table of Contents
 
 [General Info](#general-info)
-
 [Technologies](#technologies)
-
+[Demo](#demo)
 [Setup](#setup)
-
 [Features](#features)
-
 [Code Examples](#code-examples)
-
 [Inspiration](#inspiration)
-
 [Contact](#contact)
 
 ## General Info
@@ -29,6 +24,10 @@ The backend repo for this project can be found [here](https://github.com/haleywa
 - JSX
 - Rails
 - Ruby
+
+## Demo
+
+https://www.youtube.com/watch?v=22WPs-L9jLA 
 
 ## Setup
 
