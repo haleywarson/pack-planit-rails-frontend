@@ -3,12 +3,19 @@
 ## Table of Contents
 
 [General Info](#general-info)
+
 [Technologies](#technologies)
+
 [Demo](#demo)
+
 [Setup](#setup)
+
 [Features](#features)
+
 [Code Examples](#code-examples)
+
 [Inspiration](#inspiration)
+
 [Contact](#contact)
 
 ## General Info
