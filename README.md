@@ -20,7 +20,7 @@
 
 ## General Info
 
-Pack Planit helps you plan for and pack for your next camping or backpacking trip!
+Pack Planit helps you plan and pack for your next camping or backpacking trip!
 The backend repo for this project can be found [here](https://github.com/haleywarson/pack-planit-rails-backend).
 
 ## Technologies
