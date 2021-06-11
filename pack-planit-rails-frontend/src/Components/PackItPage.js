@@ -14,7 +14,6 @@ export default function PackItPage() {
   const [items, setItems] = useState([]);
   const [trips, setTrips] = useState([]);
   const [tripId, setTripId] = useState(0);
-  //   const [tripLists, setTripLists] = useState([]);
 
   // Data fetch
   const fetchTrips = () => {
@@ -22,12 +21,6 @@ export default function PackItPage() {
       .then((res) => res.json())
       .then(setTrips);
   };
-
-  //   const fetchTripLists = () => {
-  //     fetch(tripListsUrl)
-  //       .then((res) => res.json())
-  //       .then(setTripLists);
-  //   };
 
   useEffect(() => {
     fetchTrips();

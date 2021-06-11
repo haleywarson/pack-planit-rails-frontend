@@ -57,9 +57,6 @@ export default function SimpleModal(props) {
       >
         <div style={modalStyle} className={classes.paper} id="modal">
           <h2 id="simple-modal-title">{props.name} Trip Details</h2>
-          {/* <p id="simple-modal-description">
-              Descr
-            </p> */}
           <br />
           <p>Category: {props.category}</p>
           <br />
